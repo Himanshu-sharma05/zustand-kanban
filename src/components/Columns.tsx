@@ -1,8 +1,10 @@
 
+import { useState } from "react";
 import { useStore } from "../store"
 import Task from "./Task"
 
 const Columns = ({state}:{state: "Planned" | "Ongoing" | "Done"}) => {
+  
     const tasks = useStore((store)=>store.tasks);
     const newTask = tasks.filter((task)=>task.status === state);
   return (

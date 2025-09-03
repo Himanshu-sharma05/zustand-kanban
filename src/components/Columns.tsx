@@ -1,5 +1,4 @@
 
-import { useState } from "react";
 import { useStore } from "../store"
 import Task from "./Task"
 
